@@ -7,7 +7,7 @@ public interface Cashier {
 
     int takeMoney();  // гребет бабосы
 
-    void pierce();    // пробивает продукты
+    int pierce();    // пробивает продукты
 
     int serviceTime();  // время обслуживания
 }

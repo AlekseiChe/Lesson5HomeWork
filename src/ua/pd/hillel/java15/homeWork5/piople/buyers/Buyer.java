@@ -5,7 +5,7 @@ package ua.pd.hillel.java15.homeWork5.piople.buyers;
  */
 public interface Buyer {
 
-    int takeGoods();  // выбирает продукты
+    int putGoodsOnTheLine();
 
-    int payMoney();  // платит деняшки
+    int payForGoods();
 }

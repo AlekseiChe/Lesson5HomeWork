@@ -1,19 +1,16 @@
 package ua.pd.hillel.java15.homeWork5.piople;
 
+import java.security.SecureRandom;
+import java.util.Random;
+
 /**
  * Created by aleksei on 05.06.17.
  */
 public class Human {
 
-    public  void eat(){
-        System.out.println("I`m eating");
-    }  // жрет
+    private final Random random = new SecureRandom();
 
-    public void pray(){
-        System.out.println("I`m pray");
-    }   // молится
-
-    public void love(){
-        System.out.println("I love you");
-    } // совокупляется
+    protected int randomAction() {
+        return random.nextInt(15);
+    }
 }

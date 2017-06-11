@@ -1,22 +1,20 @@
 package ua.pd.hillel.java15.homeWork5.piople.buyers;
 
-import ua.pd.hillel.java15.homeWork5.piople.buyers.AbstractBuyer;
+import ua.pd.hillel.java15.homeWork5.piople.Human;
 
 /**
  * Created by aleksei on 07.06.17.
  */
-public class PensionerBuyer extends AbstractBuyer {
+public class PensionerBuyer extends Human implements Buyer {
+
 
     @Override
-    public int takeGoods() {
-        System.out.println("Гречка");
-        System.out.println("Соль");
-        System.out.println("Масло");
-        return 3;
+    public int putGoodsOnTheLine() {
+        return randomAction();
     }
 
     @Override
-    public void swears() {
-        System.out.println("Курва");
+    public int payForGoods() {
+        return randomAction();
     }
 }
